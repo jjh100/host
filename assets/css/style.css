@@ -81,6 +81,7 @@ body {
 
 nav {
   font-size: 2.2rem;
+  background: #282828;
 }
 
 /*--^^header 부분 css*/
@@ -326,3 +327,8 @@ nav {
 }
 
 /* Portrait phones and smaller */
+@media (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }
+}

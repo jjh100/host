@@ -1,0 +1,327 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+html {
+  font-family: "Tajawal", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  -ms-overflow-style: none;
+  background: #282828;
+  width: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  font-size: 2.2rem;
+}
+
+/*--^^header 부분 css*/
+#first {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  font-weight: 300;
+}
+
+#first .head_bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background: url(../img/head_bg.jfif) no-repeat center center;
+  background-size: cover;
+}
+
+#first .head_text_main {
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+#first .head_text_main a {
+  font-size: 3rem;
+  width: 20rem;
+  border-radius: 4rem;
+}
+
+#first .head_text_main h2 {
+  font-size: 4.5rem;
+  letter-spacing: .7rem;
+  font-family: "Anton", sans-serif;
+}
+
+/*--//header 부분 css*/
+/*--^^content 부분 css*/
+#Second {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+#Second .content-wrap .content_box1 {
+  background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+  text-align: center;
+  padding: 12% 0;
+}
+
+#Second .content-wrap .content_box1 a {
+  font-size: 3rem;
+  width: 20rem;
+  border-radius: 4rem;
+}
+
+#Second .content-wrap .content_box1 h2 {
+  font-size: 4.5rem;
+  margin-bottom: .8rem;
+  letter-spacing: .5rem;
+  font-family: "Anton", sans-serif;
+}
+
+#Second .content-wrap .content_box2 {
+  padding: 15% 0;
+}
+
+#Second .content-wrap .content_box2 h2 {
+  font-size: 4.5rem;
+  margin-bottom: .8rem;
+  font-weight: 700;
+}
+
+#Second .content-wrap .content_box2 h3 {
+  font-size: 3rem;
+  margin-bottom: .8rem;
+}
+
+#Second .content-wrap .content_box2 p {
+  font-size: 2rem;
+}
+
+/*--//content 부분 css*/
+#third .img_box {
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+
+#third .img_box img {
+  width: 100%;
+  height: 100%;
+}
+
+#third .img_box .grayscale {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+}
+
+#third .img_box .grayscale1 {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#third .img_box .blur {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+#third .img_box :hover.grayscale {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#third .img_box :hover.grayscale1 {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+}
+
+#third .img_box :hover {
+  border: 20px solid #282828;
+}
+
+#fourth {
+  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3F3F3F), color-stop(150%, #1C1C1C)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+  color: #fff;
+  margin: 5% 0;
+}
+
+#fourth h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+#fourth h3 {
+  font-size: 3.5rem;
+  margin-bottom: .8rem;
+  font-weight: 500;
+}
+
+#fourth p {
+  font-size: 2rem;
+}
+
+#fourth hr {
+  background: #444141;
+}
+
+#contact {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+#contact .contact_main_text {
+  margin: 0 auto;
+  padding: 6rem 0;
+  font-size: 6rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5rem;
+  font-weight: 900;
+}
+
+#contact img {
+  width: 70%;
+  height: 100%;
+}
+
+#contact ul {
+  padding-top: 8rem;
+}
+
+#contact ul li {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact ul li i {
+  padding-right: 3rem;
+  display: inline-block;
+}
+
+#contact ul hr {
+  margin: 2rem;
+  background: #444141;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background: #000;
+}
+
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  #contact ul {
+    padding-top: 1rem;
+  }
+  #third .img_box img {
+    width: inherit;
+    height: 80%;
+  }
+  #third .img_box {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  #third .img_box {
+    width: 33%;
+    height: 46%;
+  }
+}
+
+/* Portrait phones and smaller */
